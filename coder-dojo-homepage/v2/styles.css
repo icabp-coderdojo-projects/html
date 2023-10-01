@@ -1,0 +1,69 @@
+/* all elements inherit css from :root */
+:root {
+  /* reusable colours */
+  --raspberry-pi-grey: #2a3e4f;
+  --scarlet-gum: #2f0d43;
+  --light-purple: #71458c;
+  --sky-blue: #e9f5f6;
+  --off-white: #fdf6f5;
+  --coderdojo-black: #1a1a1a;
+}
+html, body {
+  all: unset;
+  color: var(--coderdojo-black);
+}
+
+/* reused class */
+.content-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+
+.login-container {
+  background-color: var(--raspberry-pi-grey);
+}
+
+.login-button {
+
+}
+
+.header {
+  background-color: var(--light-purple);
+}
+
+.header-nav {
+
+}
+
+.language-button {
+
+}
+
+/* reused class */
+.landing-section {
+  background-color: var(--scarlet-gum);
+  color: white;
+}
+
+.volunteer-section {
+  background-color: var(--sky-blue);
+}
+
+.start-dojo-section {
+  background-color: var(--off-white);
+}
+
+.contact-section {
+  background-color: white;
+}
+
+.newsletter-section {
+  background-color: var(--scarlet-gum);
+  color: white;
+}
+
+.footer {
+  background-color: var(--coderdojo-black);
+  color: white;
+}
