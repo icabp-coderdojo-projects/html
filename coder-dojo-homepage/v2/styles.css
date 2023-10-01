@@ -7,10 +7,15 @@
   --sky-blue: #e9f5f6;
   --off-white: #fdf6f5;
   --coderdojo-black: #1a1a1a;
+
+  /* reusable sizes */
+  --section-height: 600px;
+  --footer-raspberry-pi-promotion-icon-size: 64px;
 }
 html, body {
   all: unset;
   color: var(--coderdojo-black);
+  font-size: 1.2rem;
 }
 
 /* reused class */
@@ -41,6 +46,11 @@ html, body {
 }
 
 /* reused class */
+section {
+  height: var(--section-height);
+}
+
+/* reused class */
 .landing-section {
   background-color: var(--scarlet-gum);
   color: white;
@@ -61,9 +71,51 @@ html, body {
 .newsletter-section {
   background-color: var(--scarlet-gum);
   color: white;
+  max-height: 200px;
 }
 
 .footer {
   background-color: var(--coderdojo-black);
   color: white;
+}
+
+/* reused class */
+.section-image {
+  width: 100%;
+  max-height: calc(var(--section-height) * 0.8);
+}
+
+/* reused class */
+.description-container {
+  height: 100%;
+  padding-top: 100px;
+}
+
+/* reused class */
+.grid {
+  display: grid;
+  column-gap: 100px;
+  height: 100%;
+}
+
+/* reused class */
+.grid-item {
+  grid-row: 1;
+  min-width: 50%;
+  margin: auto;
+}
+
+/* reused class */
+.grid-right {
+  grid-column: 2;
+}
+
+/* reused class */
+.grid-left {
+  grid-column: 1;
+}
+
+.footer-raspberry-pi-promotion-icon {
+  height: var(--footer-raspberry-pi-promotion-icon-size);
+  width: var(--footer-raspberry-pi-promotion-icon-size);
 }

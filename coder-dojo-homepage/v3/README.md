@@ -1,9 +1,10 @@
-# CoderDojo Homepage V2
+# CoderDojo Homepage V3
 
 ## Goals
 
-- Using flex/grid to place grouped elements side by side
-- Make the coderdojo and raspberry pi logos links
+- Using flex to place grouped elements side by side header + footer
+- Style buttons and links
+- Make all clickable images links
 - Add embedded video with placeholder image
 
 ## Hold for later

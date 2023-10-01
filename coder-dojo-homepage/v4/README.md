@@ -1,4 +1,4 @@
-# CoderDojo Homepage V2
+# CoderDojo Homepage V4
 
 ## Goals
 
