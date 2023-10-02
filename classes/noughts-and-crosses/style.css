@@ -1,0 +1,21 @@
+.game-board {
+  height: min(90vh, 90vw);
+  width: min(90vh, 90vw);
+  margin: auto;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  background-color: black;
+  border: 2px solid black;
+}
+
+.grid-square {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-size: 28vh;
+  text-align: center;
+}
+
