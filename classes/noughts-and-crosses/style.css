@@ -15,7 +15,7 @@
   height: 100%;
   width: 100%;
   background-color: white;
-  font-size: 26vh;
+  font-size: min(26vh, 26vw);
   text-align: center;
 }
 
