@@ -1,6 +1,6 @@
 .game-board {
-  height: min(80vh, 80vw);
-  width: min(80vh, 80vw);
+  height: min(80svh, 80svw);
+  width: min(80svh, 80svw);
   margin: auto;
 
   display: grid;
@@ -15,7 +15,7 @@
   height: 100%;
   width: 100%;
   background-color: white;
-  font-size: min(26vh, 26vw);
+  font-size: min(26svh, 26svw);
   text-align: center;
 }
 
