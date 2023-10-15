@@ -1,22 +1,26 @@
 // Select sonicGif in DOM so we can do things to it with javascript
-const stepSize = 100;
+const stepSize = 200;
 const sonicGif = document.getElementById('sonic-running');
 
 // Create functions which move Sonic around page using margins
 function moveSonicDown() {
-  sonicGif.style.marginTop = (parseInt(window.getComputedStyle(sonicGif).marginTop) + stepSize) + 'px';
+  const currentMarginTop = parseInt(window.getComputedStyle(sonicGif).marginTop);
+  sonicGif.style.marginTop = (currentMarginTop + stepSize) + 'px';
 }
 
 function moveSonicUp() {
-  sonicGif.style.marginTop = (parseInt(window.getComputedStyle(sonicGif).marginTop) - stepSize) + 'px';
+  const currentMarginTop = parseInt(window.getComputedStyle(sonicGif).marginTop);
+  sonicGif.style.marginTop = (currentMarginTop - stepSize) + 'px';
 }
 
 function moveSonicRight() {
-  sonicGif.style.marginLeft = (parseInt(window.getComputedStyle(sonicGif).marginLeft) + stepSize) + 'px';
+  const currentMarginLeft = parseInt(window.getComputedStyle(sonicGif).marginLeft);
+  sonicGif.style.marginLeft = (currentMarginLeft + stepSize) + 'px';
 }
 
 function moveSonicLeft() {
-  sonicGif.style.marginLeft = (parseInt(window.getComputedStyle(sonicGif).marginLeft) - stepSize) + 'px';
+  const currentMarginLeft = parseInt(window.getComputedStyle(sonicGif).marginLeft);
+  sonicGif.style.marginLeft = (currentMarginLeft - stepSize) + 'px';
 }
 
 // Add key press event listener. Only do things for arrow keys

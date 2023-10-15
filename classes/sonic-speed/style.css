@@ -1,4 +1,9 @@
 #sonic-running {
-  height: 100px;
+  height: 200px;
   aspect-ratio: auto;
+}
+
+html {
+  /* come back to this */
+  background-image: url('https://stock.adobe.com/search?k=racetrack+cartoon');
 }
