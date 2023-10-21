@@ -12,7 +12,7 @@ function moveSonicDown() {
 }
 
 function moveSonicUp() {
-  const currentMarginTop = parseInt(sonicGif.sytle.marginTop);
+  const currentMarginTop = parseInt(sonicGif.style.marginTop);
   sonicGif.style.marginTop = (currentMarginTop - stepSize) + 'px';
 }
 
