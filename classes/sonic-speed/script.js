@@ -2,24 +2,28 @@
 const stepSize = 200;
 const sonicGif = document.getElementById('sonic-running');
 
+sonicGif.style.marginTop = 0;
+sonicGif.style.marginLeft = 0;
+
 // Create functions which move Sonic around page using margins
 function moveSonicDown() {
-  const currentMarginTop = parseInt(window.getComputedStyle(sonicGif).marginTop);
+  const currentMarginTop = parseInt(sonicGif.style.marginTop);
   sonicGif.style.marginTop = (currentMarginTop + stepSize) + 'px';
 }
 
 function moveSonicUp() {
-  const currentMarginTop = parseInt(window.getComputedStyle(sonicGif).marginTop);
+  const currentMarginTop = parseInt(sonicGif.sytle.marginTop);
   sonicGif.style.marginTop = (currentMarginTop - stepSize) + 'px';
 }
 
 function moveSonicRight() {
-  const currentMarginLeft = parseInt(window.getComputedStyle(sonicGif).marginLeft);
+  const currentMarginLeft = parseInt(sonicGif.style.marginLeft);
+  console.log(currentMarginLeft)
   sonicGif.style.marginLeft = (currentMarginLeft + stepSize) + 'px';
 }
 
 function moveSonicLeft() {
-  const currentMarginLeft = parseInt(window.getComputedStyle(sonicGif).marginLeft);
+  const currentMarginLeft = parseInt(sonicGif.style.marginLeft);
   sonicGif.style.marginLeft = (currentMarginLeft - stepSize) + 'px';
 }
 
